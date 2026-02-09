@@ -1,32 +1,215 @@
-
 <!DOCTYPE html>
-<html lang="it" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>enricoemprin.it</title>
-  <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrico Emprin | Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="page_container">
-    <div class="horizontal_page_block" id="title_block_container">
-        <h1>Enrico Emprin</h2>
+
+<nav class="navbar">
+    <div class="logo">Enrico<span class="dot">.</span></div>
+    <div class="nav-links">
+        <a href="#about">Philosophy</a>
+        <a href="#experience">Journey</a>
+        <a href="#projects">Portfolio</a>
     </div>
-    <div id="citazione_block_container" class="horizontal_page_block flex_columns_container">
-        <div class="resizable_horizontal_spacer"></div>
-            <p id="citazione" class="resizable_horizontal_spacer">"Solo la fortuna può farci fare ciò che la mente non ha mai visto"</p>
-     
-        <div class="resizable_horizontal_spacer"></div>
+</nav>
+
+<section class="hero-section" id="about">
+    <div class="hero-container">
+        <div class="hero-text">
+            <span class="tag">Physical Engineer & AI Enthusiast</span>
+            <h1>Building with <br><span class="name">Purpose</span></h1>
+            <p>I believe that to create something tangible, one must pursue it with <strong>intention, discipline, and purpose</strong>. My goal is to bridge technical depth with strategic vision to build innovative and impactful solutions.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-orange">View Portfolio</a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img class="hero-image" src="assets/18_anna_image.jpg" alt="Enrico Emprin">
+        </div>
     </div>
-    <div class="horizontal_page_block">
-        <p>Sito hostato da GitHub</p>
+</section>
+
+<section id="experience" class="section-white">
+    <div class="container">
+        <span class="section-label">01. Experience</span>
+        <h2 class="section-title">Professional Path</h2>
+        
+        <div class="experience-showcase">
+            <div class="exp-card-large clickable" onclick="openModal('modal-got')">
+                <div class="exp-content">
+                    <img src="assets/got_image.jpg" alt="Grand Orange" class="exp-logo-large">
+                    <div class="exp-details">
+                        <span class="date">Jan 2024 — Ongoing</span>
+                        <h3>Partner @ Grand Orange de Turin</h3>
+                        <p>Driving strategic decision-making and overseeing IT operations and digital infrastructure for the firm.</p>
+                        <span class="read-more">View Strategic Role →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-grid-secondary">
+                <div class="exp-card-small clickable" onclick="openModal('modal-freelance')">
+                    <div class="exp-card-inner">
+                        <div class="icon-box">W</div>
+                        <h4>Freelance Developer</h4>
+                        <span class="date">2017 — 2021</span>
+                        <p>Designing and developing responsive websites and digital art.</p>
+                    </div>
+                </div>
+
+                <div class="exp-card-small clickable" onclick="openModal('modal-jeunesse')">
+                    <div class="exp-card-inner">
+                        <img src="assets/jeunesse_logo.png" alt="Jeunesse" class="exp-logo-sm">
+                        <h4>Network Builder</h4>
+                        <span class="date">2017 — 2021</span>
+                        <p>Leveraging digital marketing strategies for network expansion and performance optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section-gray">
+    <div class="container">
+        <span class="section-label">02. Portfolio</span>
+        <h2 class="section-title">Creative Works</h2>
+        <div class="project-grid-premium">
+            <div class="project-item clickable" onclick="openModal('modal-angular')">
+                <div class="project-visual">
+                    <img src="assets/angular_logo.webp" alt="Angular Logo">
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Full-Stack Application</span>
+                    <h3>Objective Tracker</h3>
+                    <p>Designed to help users structure and achieve long-term objectives using the Angular framework.</p>
+                    <span class="btn-text">Read Process <span class="arrow">→</span></span>
+                </div>
+            </div>
+
+            <div class="project-item clickable" onclick="openModal('modal-exmah')">
+                <div class="project-visual">
+                    <img src="assets/exmah_logo_upscaled.png" alt="ExMah Logo" class="contain">
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Hardware & 3D Animation</span>
+                    <h3>Sensor Interfaces</h3>
+                    <p>Developing prosthetic arm interfaces and 3D animations for digital project models.</p>
+                    <span class="btn-text">Read Process <span class="arrow">→</span></span>
+                </div>
+            </div>
+
+            <div class="project-item clickable" onclick="openModal('modal-hackathon')">
+                <div class="project-visual">
+                    <img src="assets/motorvalley_accellerator.png" alt="Motorvalley">
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Automotive Innovation</span>
+                    <h3>Hackathon Top 5</h3>
+                    <p>Led a multidisciplinary team to a Top 5 finish at the Driving Innovation Hackathon.</p>
+                    <span class="btn-text">Read Process <span class="arrow">→</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-premium">
+    <div class="container footer-content">
+        <div class="footer-top">
+            <span class="footer-label">Stay in Touch</span>
+            <h2 class="footer-quote">"Solo la fortuna può farci fare ciò che la mente non ha mai visto"</h2>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <div class="logo">Enrico<span class="dot">.</span></div>
+                <p>Physical Engineer specializing in AI & Product Strategy.</p>
+            </div>
+            <div class="footer-meta">
+                <p class="hosting-tag">website hosted on GitHub</p>
+                <p class="copyright">© 2026 Enrico Emprin</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <div id="modal-content" class="modal-content"></div>
     </div>
 </div>
 
+<template id="content-got">
+    <h2>Grand Orange de Turin</h2>
+    <p class="tag">Partner & IT Lead</p>
+    <div class="modal-body">
+        <p>Involved in high-level strategic decision-making and interdepartmental coordination. I manage IT operations and the digital infrastructure that powers the firm's daily operations.</p>
+    </div>
+</template>
 
+<template id="content-exmah">
+    <h2>ExMaH University Team</h2>
+    <p class="tag">Engineering & Visualization</p>
+    <div class="modal-body">
+        <p>A multidisciplinary team focused on assistive technologies. I engineered interfaces between microcontrollers and prosthetic sensors while developing 3D animations for visualization.</p>
+    </div>
+</template>
 
-<!-- partial -->
-  
+<template id="content-freelance">
+    <h2>Freelance Developer</h2>
+    <p class="tag">Digital Solutions (2017-2021)</p>
+    <div class="modal-body">
+        <p>Designed and developed responsive websites ensuring optimized performance. I also created custom video, photography, and digital art on request.</p>
+    </div>
+</template>
+
+<template id="content-angular">
+    <h2>Angular Objective Tracker</h2>
+    <p class="tag">Full-Stack Development</p>
+    <div class="modal-body">
+        <p>A full-stack application developed with mentorship to help users structure long-term goals. This project reflects my passion for solving complex problems through systems thinking.</p>
+    </div>
+</template>
+
+<template id="content-hackathon">
+    <h2>Driving Innovation Hackathon</h2>
+    <p class="tag">Bocconi University & Motor Valley</p>
+    <div class="modal-body">
+        <p>Led a multidisciplinary team to a Top 5 finish. We developed an innovative solution for the automotive tech sector under high-pressure conditions.</p>
+    </div>
+</template>
+
+<template id="content-jeunesse">
+    <h2>Network Builder Seller</h2>
+    <p class="tag">Strategic Sales (2017-2021)</p>
+    <div class="modal-body">
+        <p>Focused on network expansion and digital marketing strategies to optimize performance and outreach.</p>
+    </div>
+</template>
+
+<script>
+    function openModal(id) {
+        const overlay = document.getElementById('modal-overlay');
+        const contentArea = document.getElementById('modal-content');
+        const template = document.getElementById(id.replace('modal-', 'content-'));
+        contentArea.innerHTML = template.innerHTML;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+        const overlay = document.getElementById('modal-overlay');
+        overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+    document.getElementById('modal-overlay').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+</script>
+
 </body>
 </html>
