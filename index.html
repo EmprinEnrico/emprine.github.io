@@ -104,7 +104,7 @@
             </div>
 
             <div class="project-item clickable" onclick="openModal('modal-hackathon')">
-                <div class="project-visual">
+                <div class="project-visual motorvalley">
                     <img src="assets/motorvalley_accellerator.png" alt="Motorvalley">
                 </div>
                 <div class="project-info">
@@ -209,6 +209,14 @@
     document.getElementById('modal-overlay').addEventListener('click', function(e) {
         if (e.target === this) closeModal();
     });
+
+    const image = document.querySelector('.hero-image');
+    const start = image.getBoundingClientRect().top + window.scrollY;
+
+    window.addEventListener('scroll', ( ) => {
+        const ratio = 1 - (image.getBoundingClientRect().top / start);
+
+        image.style.setProperty('--zoom', 1 + Math.max(0, Math.min(ratio, 1)) * 0.5);    });
 </script>
 
 </body>
