@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<div class="scroll-progress"></div>
+
 <nav class="navbar">
     <div class="logo">Enrico<span class="dot">.</span></div>
     <div class="nav-links">
@@ -19,7 +21,7 @@
 
 <section class="hero-section" id="about">
     <div class="hero-container">
-        <div class="hero-text">
+        <div class="hero-text reveal">
             <span class="tag">Physical Engineer & AI Enthusiast</span>
             <h1>Building with <br><span class="name">Purpose</span></h1>
             <p>I believe that to create something tangible, one must pursue it with <strong>intention, discipline, and purpose</strong>. My goal is to bridge technical depth with strategic vision to build innovative and impactful solutions.</p>
@@ -27,18 +29,26 @@
                 <a href="#projects" class="btn-orange">View Portfolio</a>
             </div>
         </div>
-        <div class="hero-image-wrapper">
+        <div class="hero-image-wrapper reveal">
             <img class="hero-image" src="assets/18_anna_image.jpg" alt="Enrico Emprin">
         </div>
+    </div>
+</section>
+
+<section class="tech-marquee">
+    <div class="marquee-content">
+        <span>PYTHON</span> <span>ANGULAR</span> <span>DOCKER</span> 
+        <span>GIT</span> <span>C</span> <span>JAVASCRIPT</span>
+        <span>HTML/CSS</span> <span>MACHINE LEARNING</span>
     </div>
 </section>
 
 <section id="experience" class="section-white">
     <div class="container">
         <span class="section-label">01. Experience</span>
-        <h2 class="section-title">Professional Path</h2>
+        <h2 class="section-title reveal">Professional Path</h2>
         
-        <div class="experience-showcase">
+        <div class="experience-showcase reveal">
             <div class="exp-card-large clickable" onclick="openModal('modal-got')">
                 <div class="exp-content">
                     <img src="assets/got_image.jpg" alt="Grand Orange" class="exp-logo-large">
@@ -77,51 +87,58 @@
 <section id="projects" class="section-gray">
     <div class="container">
         <span class="section-label">02. Portfolio</span>
-        <h2 class="section-title">Creative Works</h2>
+        <h2 class="section-title reveal">Case Studies</h2>
         <div class="project-grid-premium">
-            <div class="project-item clickable" onclick="openModal('modal-angular')">
+            <div class="project-item clickable reveal" onclick="openModal('modal-angular')">
                 <div class="project-visual">
                     <img src="assets/angular_logo.webp" alt="Angular Logo">
                 </div>
                 <div class="project-info">
-                    <span class="project-cat">Full-Stack Application</span>
+                    <span class="project-cat">Full-Stack Solution</span>
                     <h3>Objective Tracker</h3>
-                    <p>Designed to help users structure and achieve long-term objectives using the Angular framework.</p>
-                    <span class="btn-text">Read Process <span class="arrow">→</span></span>
+                    <p>Building a system to turn passive flow into intentional discipline.</p>
+                    <span class="btn-text">View Process <span class="arrow">→</span></span>
                 </div>
             </div>
 
-            <div class="project-item clickable" onclick="openModal('modal-exmah')">
+            <div class="project-item clickable reveal" onclick="openModal('modal-exmah')">
                 <div class="project-visual">
                     <img src="assets/exmah_logo_upscaled.png" alt="ExMah Logo" class="contain">
                 </div>
                 <div class="project-info">
-                    <span class="project-cat">Hardware & 3D Animation</span>
-                    <h3>Sensor Interfaces</h3>
-                    <p>Developing prosthetic arm interfaces and 3D animations for digital project models.</p>
-                    <span class="btn-text">Read Process <span class="arrow">→</span></span>
+                    <span class="project-cat">Hardware & AI</span>
+                    <h3>The Bionic Interface</h3>
+                    <p>Engineering sensor interfaces for 3D-printed prosthetic arms.</p>
+                    <span class="btn-text">View Process <span class="arrow">→</span></span>
                 </div>
             </div>
 
-            <div class="project-item clickable" onclick="openModal('modal-hackathon')">
+            <div class="project-item clickable reveal" onclick="openModal('modal-hackathon')">
                 <div class="project-visual motorvalley">
                     <img src="assets/motorvalley_accellerator.png" alt="Motorvalley">
                 </div>
                 <div class="project-info">
                     <span class="project-cat">Automotive Innovation</span>
-                    <h3>Hackathon Top 5</h3>
-                    <p>Led a multidisciplinary team to a Top 5 finish at the Driving Innovation Hackathon.</p>
-                    <span class="btn-text">Read Process <span class="arrow">→</span></span>
+                    <h3>Driving the Future</h3>
+                    <p>Leading a multidisciplinary team to a Top 5 finish.</p>
+                    <span class="btn-text">View Process <span class="arrow">→</span></span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="cta-section" id="contact">
+    <div class="container reveal">
+        <h2>Have a <span class="accent-text">vision</span> in mind?</h2>
+        <p>I am looking to lead AI development teams that create useful, inspiring software.</p>
+        <a href="mailto:emprin.enrico@gmail.com" class="btn-orange-large">Let's Build It Together</a>
+    </div>
+</section>
+
 <footer class="footer-premium">
-    <div class="container footer-content">
+    <div class="container footer-content reveal">
         <div class="footer-top">
-            <span class="footer-label">Stay in Touch</span>
             <h2 class="footer-quote">"Solo la fortuna può farci fare ciò che la mente non ha mai visto"</h2>
         </div>
         <div class="footer-bottom">
@@ -144,21 +161,6 @@
     </div>
 </div>
 
-<template id="content-got">
-    <h2>Grand Orange de Turin</h2>
-    <p class="tag">Partner & IT Lead</p>
-    <div class="modal-body">
-        <p>Involved in high-level strategic decision-making and interdepartmental coordination. I manage IT operations and the digital infrastructure that powers the firm's daily operations.</p>
-    </div>
-</template>
-
-<template id="content-exmah">
-    <h2>ExMaH University Team</h2>
-    <p class="tag">Engineering & Visualization</p>
-    <div class="modal-body">
-        <p>A multidisciplinary team focused on assistive technologies. I engineered interfaces between microcontrollers and prosthetic sensors while developing 3D animations for visualization.</p>
-    </div>
-</template>
 
 <template id="content-freelance">
     <h2>Freelance Developer</h2>
@@ -168,27 +170,58 @@
     </div>
 </template>
 
-<template id="content-angular">
-    <h2>Angular Objective Tracker</h2>
-    <p class="tag">Full-Stack Development</p>
-    <div class="modal-body">
-        <p>A full-stack application developed with mentorship to help users structure long-term goals. This project reflects my passion for solving complex problems through systems thinking.</p>
-    </div>
-</template>
 
-<template id="content-hackathon">
-    <h2>Driving Innovation Hackathon</h2>
-    <p class="tag">Bocconi University & Motor Valley</p>
-    <div class="modal-body">
-        <p>Led a multidisciplinary team to a Top 5 finish. We developed an innovative solution for the automotive tech sector under high-pressure conditions.</p>
-    </div>
-</template>
 
 <template id="content-jeunesse">
     <h2>Network Builder Seller</h2>
     <p class="tag">Strategic Sales (2017-2021)</p>
     <div class="modal-body">
         <p>Focused on network expansion and digital marketing strategies to optimize performance and outreach.</p>
+    </div>
+</template>
+
+<template id="content-got">
+    <h2>Grand Orange de Turin</h2>
+    <p class="tag">Partner & IT Operations</p>
+    <div class="modal-body">
+        <h3>The Role</h3>
+        <p>Involved in high-level strategic decision-making and interdepartmental coordination.</p>
+        <h3>The Responsibility</h3>
+        <p>Directly responsible for IT operations and the digital infrastructure of the firm.</p>
+    </div>
+</template>
+
+<template id="content-exmah">
+    <h2>ExMaH University Team</h2>
+    <p class="tag">Hardware Developer & Animator</p>
+    <div class="modal-body">
+        <h3>The Problem</h3>
+        <p>Bridging the gap between fundamental natural laws and concrete real-world systems.</p>
+        <h3>The Work</h3>
+        <p>Engineered sensor interfaces for Mbed boards using C and developed 3D animations for interactivity.</p>
+    </div>
+</template>
+
+<template id="content-angular">
+    <h2>Angular Objective Tracker</h2>
+    <p class="tag">Full-Stack extracurricular project</p>
+    <div class="modal-body">
+        <h3>The Concept</h3>
+        <p>Designed to help users structure and achieve long-term objectives through intentional discipline.</p>
+        <h3>The Tech</h3>
+        <p>A full-stack application developed while receiving professional mentorship.</p>
+        <a href="https://emprinenrico.github.io/app-scout/">App Website</a>
+    </div>
+</template>
+
+<template id="content-hackathon">
+    <h2>Driving Innovation Hackathon</h2>
+    <p class="tag">Top 5 Finish | Bocconi University</p>
+    <div class="modal-body">
+        <h3>The Challenge</h3>
+        <p>Developing an innovative solution for the automotive tech sector in a high-pressure environment.</p>
+        <h3>The Result</h3>
+        <p>Led a multidisciplinary team to a Top 5 finish among competitors.</p>
     </div>
 </template>
 
@@ -217,6 +250,27 @@
         const ratio = 1 - (image.getBoundingClientRect().top / start);
 
         image.style.setProperty('--zoom', 1 + Math.max(0, Math.min(ratio, 1)) * 0.5);    });
+    
+        // Scroll Reveal Intersection Observer
+    const observerOptions = { threshold: 0.15 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Scroll Progress & Hero Zoom
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrolled / scrollable) * 100;
+        document.querySelector('.scroll-progress').style.width = progress + '%';
+    });
+
 </script>
 
 </body>
