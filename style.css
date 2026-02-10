@@ -65,7 +65,7 @@ body { background-color: var(--white); color: var(--text-dark); font-family: 'In
     will-change: transform;
 }
 .hero-image:hover { transform: scale(1.5); }
-.hero-image-wrapper { border-radius: 20px; border: 15px solid var(--bg-light); overflow: hidden; transition: border-color 0.5s; }
+.hero-image-wrapper { border-radius: 20px; border: 15px solid var(--bg-light); overflow: hidden; transition: border-color 0.5s; margin: 0px 15px 0px 15px; }
 .hero-image-wrapper:hover { border-color: var(--orange); }
 
 /* Tech Marquee */
@@ -133,6 +133,7 @@ body { background-color: var(--white); color: var(--text-dark); font-family: 'In
 .btn-text { font-size: 13px; font-weight: 800; color: var(--text-dark); text-transform: uppercase; display: inline-block; }
 .arrow { color: var(--orange); margin-left: 5px; transition: 0.3s; }
 .project-item:hover .arrow { margin-left: 15px; }
+.ul-list{padding-left: 1rem;}
 
 /* About me section*/
 
